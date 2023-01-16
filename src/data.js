@@ -2001,3 +2001,20 @@ const movies = [
     score: 8
   }
 ];
+
+function scoresAverage(moviesArray) {
+    
+  const total = moviesArray.map(function (element) {
+    return element.score;  });
+
+    const reduzido = total.reduce(function (valorAnterior, quemSoma) {
+      return valorAnterior + quemSoma});
+
+  return resultado =  (reduzido / moviesArray.length).toFixed(2);
+
+  return resultadoFinal = resultado.Number.parseFloat(valorCom2);
+
+
+  }
+
+console.log(scoresAverage(movies));
